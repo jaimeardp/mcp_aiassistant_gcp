@@ -1,0 +1,26 @@
+[project]
+name = "database-analytics-mcp"
+version = "0.1.0"
+description = "Database Analytics MCP Server built with FastMCP"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "fastmcp[client,langchain]>=2.0.0",
+    "google-generativeai>=0.8.5",
+    "langchain>=0.3.26",
+    "langchain-google-genai>=2.0.10",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.5.2",
+    "pandas>=2.3.1",
+    "psycopg2>=2.9.10",
+    "python-dotenv>=1.1.1",
+    "sqlalchemy>=2.0.41",
+    "sqlglot>=27.0.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
