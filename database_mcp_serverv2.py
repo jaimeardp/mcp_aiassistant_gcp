@@ -248,6 +248,7 @@ async def get_table_stats(table_name: str) -> Dict[str, Any]:
     description="List all tables in the public schema of the connected PostgreSQL database.",
 )
 async def list_tables() -> Dict[str, Any]:
+    # comment
     pool = await init_db()
     sql = """
         SELECT table_name
